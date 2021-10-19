@@ -22,9 +22,9 @@ void closeFiles(ifstream& file1, ofstream& file2, ofstream& file3) {
         cout << "Programm finished" << endl;
 }
 bool isNumber(char a) {
-if (a >= '0' && a <= '9'){
-        return true;
-    }
+    if (a >= '0' && a <= '9'){
+            return true;
+        }
     return false;
 }
 bool LettersLatin(char StringInput) {
@@ -35,21 +35,15 @@ bool LettersLatin(char StringInput) {
     }
     return true;
 }
-int strlength(string StringInput) {
-    int i = 0;
-    while (StringInput[i] != '\0') { i++; }
-    return i + 1;
-}
 void Answer(string StringInput, ofstream& File_with_Letters, ofstream& File_with_Numbers) {
-    int length = strlength(StringInput);
     string numbers;
     string letters;
-    for(int i = 0; i < length; ++i) {
-        if (isNumber(StringInput[i])) {
-            numbers.push_back(StringInput[i]);
+    for(char i : StringInput) {
+        if (isNumber(i)) {
+            numbers.push_back(i);
             numbers.push_back(' ');
-        } else if (LettersLatin(StringInput[i])){
-            letters.push_back(StringInput[i]);
+        } else if (LettersLatin(i)){
+            letters.push_back(i);
             letters.push_back(' ');
         }
     }
