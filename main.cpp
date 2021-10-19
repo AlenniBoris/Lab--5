@@ -47,8 +47,10 @@ void Answer(string StringInput, ofstream& File_with_Letters, ofstream& File_with
     for(int i = 0; i < length; ++i) {
         if (isNumber(StringInput[i])) {
             numbers.push_back(StringInput[i]);
+            numbers.push_back(' ');
         } else if (LettersLatin(StringInput[i])){
             letters.push_back(StringInput[i]);
+            letters.push_back(' ');
         }
     }
     File_with_Letters << letters;
