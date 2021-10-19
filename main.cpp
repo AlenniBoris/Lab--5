@@ -46,7 +46,6 @@ void Answer(string StringInput, ofstream& File_with_Letters, ofstream& File_with
     string letters;
     for(int i = 0; i < length; ++i) {
         if (isNumber(StringInput[i])) {
-
             numbers.push_back(StringInput[i]);
         } else if (LettersLatin(StringInput[i])){
             letters.push_back(StringInput[i]);
