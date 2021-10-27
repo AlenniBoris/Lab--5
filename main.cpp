@@ -35,7 +35,7 @@ bool LettersLatin(char StringInput) {
     }
     return true;
 }
-void Answer(string StringInput, ofstream& File_with_Letters, ofstream& File_with_Numbers) {
+void Answer(const string& StringInput, ofstream& File_with_Letters, ofstream& File_with_Numbers) {
     string numbers;
     string letters;
     for(char i : StringInput) {
