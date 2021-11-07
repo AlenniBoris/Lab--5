@@ -142,6 +142,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab__5.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab__5.dir\main.cpp.s
 .PHONY : main.cpp.s
 
+solution.obj: solution.cpp.obj
+.PHONY : solution.obj
+
+# target to build an object file
+solution.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab__5.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab__5.dir\solution.cpp.obj
+.PHONY : solution.cpp.obj
+
+solution.i: solution.cpp.i
+.PHONY : solution.i
+
+# target to preprocess a source file
+solution.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab__5.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab__5.dir\solution.cpp.i
+.PHONY : solution.cpp.i
+
+solution.s: solution.cpp.s
+.PHONY : solution.s
+
+# target to generate assembly for a file
+solution.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab__5.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab__5.dir\solution.cpp.s
+.PHONY : solution.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -154,6 +178,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... solution.obj
+	@echo ... solution.i
+	@echo ... solution.s
 .PHONY : help
 
 
